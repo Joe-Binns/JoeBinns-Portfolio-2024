@@ -578,14 +578,93 @@ section {
 }
 
 
-/* Project Section Styles */
+/* Projects Section Styles */
 #projects {
-    background: #d3f2f8;
-    
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 60px 20px;
+    background-color: #a8e0eb;
 }
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.projects-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    font-weight: 300;
+    flex: 1 1 calc(33.333% - 40px); /* Adjusting width for 3 cards per row with some gap */
+    position: relative;
+    background: #eff6f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth scaling */
+}
+
+.project-card .date {
+    display: flex;
+}
+.project-card .date p {
+    font-weight: 400;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right:-40px;
+    width: 100px;
+    height: 100px;
+    background: #00b4d8;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.project-card:hover::before {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale up the card slightly */
+    box-shadow: 8 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.project-card h3,
+.project-card p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 2;
+}
+
 
 /* Contact Form Styles */
 form {
