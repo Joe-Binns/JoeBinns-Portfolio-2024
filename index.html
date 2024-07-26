@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Overlay -->
+    <div id="overlay">
+        <div class="overlay-content">
+            <span class="title">
+                <h4>Joe Binns<h4>
+            </span>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="banner-content">
+            <p class="banner-title">JB</p>
+            <button id="menu-button" onclick="toggleMenu()">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar-menu" class="sidebar hidden">
+        <button class="closebtn" onclick="toggleMenu()">×</button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-address-card"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="fas fa-file"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="square intro">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <div class="intro">
+                    <h1>Hello there!</h1>
+                    <p>Welcome to my portfolio!</p>
+                    <p>My name is Joe!</p>
+                    <p>I'm a</p>
+                    <p>Software Developer</p>
+                    <p>Website Developer</p>
+                    <p>UI/UX Designer</p>
+                    <p>Video Game Developer</p>
+                </div>
+                <a href="https://www.linkedin.com/in/joe-binns-1a51631a0/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+        <iframe src="https://lottie.host/embed/bd3bdf8f-aab6-4c8c-92fc-2081f98c6b70/FgR5jO0khi.json"></iframe>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="portrait.jpg" alt="Portrait of Joe Binns">
+            </div>
+            <div class="about-text">
+                <p>
+                    I love exploring how technology can inspire and change the way we see and interact with the world.
+                    From publishing apps involving Ai fitness & workout generation, varios projects i completed during my bachelors degree,
+                    or creating video games everyone can enjoy. I want to help build tools that enable people to interact with
+                    technologies in an engaging yet simple way. Let's connect and chat about how i could help you with your next project!
+                </p>
+                <div class="about-links">
+                    <p>Email: <a href="mailto:joecravenbinns@gmail.com">joecravenbinns@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/joe-binns-1a51631a0/" target="_blank">ca.linkedin.com/in/joe-binns-1a51631a0</a></p>
+                    <p>Resume: <a href="path/to/resume.pdf" target="_blank">Click here for Resume PDF</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Project description.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
