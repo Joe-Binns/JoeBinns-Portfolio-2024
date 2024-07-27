@@ -578,6 +578,77 @@ section {
 }
 
 
+ /* Skills Section */
+ #skills {
+    background: #eff6f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content:space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skill-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.skill-card p b{
+    color: #00b4d8;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.skill-card ul li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.skill-card ul li b {
+    color: #00b4d8;
+}
+
+.skill-card .skillicon {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #eeeeee;
+    background: #00b4d8;
+    border-radius: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: auto;
+    padding-right: auto; /* Increased padding for better circle shape */
+    display: inline-block;
+    width: 80px;  /* Fixed width for consistent circle shape */
+    height: 80px;  /* Fixed height for consistent circle shape */
+    line-height: 40px;  /* Align icon vertically */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
 /* Projects Section Styles */
 #projects {
     padding: 60px 20px;
@@ -665,29 +736,87 @@ section {
     z-index: 2;
 }
 
-
-/* Contact Form Styles */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+/* Footer Styles */
+#footer {
+    margin: 0;
+    padding: 0;
+    background: #eff6f9;
+    position: relative;
+    height: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form label {
+#footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
     display: block;
-    margin: 10px 0 5px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    transition: color 0.3s ease;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+#footer ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
 }
 
-form button {
-    padding: 10px 20px;
-    background: #333;
+#footer ul li a:hover .icon {
     color: #fff;
-    border: none;
-    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+#footer ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00b4d8;
+    transition: .5s;
+    z-index: 2;
+}
+
+#footer ul li a:hover:before {
+    top: 0;
+}
+
+#footer ul li:nth-child(1) a:before {
+    background: #0077b5; /* LinkedIn color */
+}
+
+#footer ul li:nth-child(2) a:before {
+    background: #51b500; /* File color */
+}
+
+#footer ul li:nth-child(3) a:before {
+    background: #b5003c; /* Email color */
+}
+
+#footer ul li:nth-child(4) a:before {
+    background: #dd4b39; /* Instagram color */
 }
