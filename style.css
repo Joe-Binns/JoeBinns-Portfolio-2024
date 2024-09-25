@@ -540,8 +540,8 @@ section {
 .technologies-card {
     border-radius: 20px;
     background-color: grey;
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     margin: 30px;
     display: flex;
     align-items: center; /* Center vertically */
@@ -557,7 +557,7 @@ section {
 
 /* Make sure the FontAwesome icons scale properly */
 .technologies-card > i {
-    font-size: 10vw; /* Adjust this value based on your design */
+    font-size: 8vw; /* Adjust this value based on your design */
     color: white; /* Set icon color */
 }
 
