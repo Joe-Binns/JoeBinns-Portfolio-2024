@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     line-height: 1.6;
     background: #f4f4f4;
     overflow-x: hidden;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* ------------------------------
@@ -528,6 +528,44 @@ section {
         background-position: 0% 50%;
     }
 }
+
+/* Technologies Section */
+.technologies-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.technologies-card {
+    border-radius: 20px;
+    background-color: grey;
+    height: 15vw;
+    width: 15vw;
+    margin: 30px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Apply the same size for both images and icons */
+.technologies-card > img, 
+.technologies-card > i {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Make sure the FontAwesome icons scale properly */
+.technologies-card > i {
+    font-size: 10vw; /* Adjust this value based on your design */
+    color: white; /* Set icon color */
+}
+
+/* You can set specific size for images as well if needed */
+.technologies-card > img {
+    object-fit: contain; /* Ensure images retain aspect ratio */
+}
+
 
 /* About section */
 #about {
