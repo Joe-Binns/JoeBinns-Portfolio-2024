@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background: #f4f4f4;
+    overflow-x: hidden;
 }
 
 /* ------------------------------
